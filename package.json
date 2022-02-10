@@ -1,0 +1,12 @@
+{
+  "name": "avisos_economicos",
+  "version": "1.0.0",
+  "description": "sitio web de avisos economicos finca diez",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["avisos","economicos", "finca diez", "rio frio", "rio", "frio", "digital"],
+  "author": "Ing Victor Ml Nunez",
+  "license": "ISC"
+}

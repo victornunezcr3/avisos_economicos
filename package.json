@@ -1,9 +1,8 @@
 {
   "name": "avisos_economicos",
   "version": "1.0.0",
-  "description": "sitio web de avisos economicos finca diez",
-  "main": "./dist/js/index.js",
-  "source": "src/js/index.js",
+  "description": "sitio web de avisos economicos finca diez",  
+  "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "start": "parcel",

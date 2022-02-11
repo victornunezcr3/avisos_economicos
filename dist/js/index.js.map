@@ -1,1 +1,0 @@
-{"mappings":";;;;;SAAgB,yCAAG,CAAC,CAAC,EAAC,CAAC,EAAC,CAAC;IACrB,MAAM,CAAC,CAAC,GAAC,CAAC;AACd,CAAC","sources":["src/js/index.js"],"sourcesContent":["export function add(a,b){\r\n    return a+b;\r\n}"],"names":[],"version":3,"file":"index.js.map"}

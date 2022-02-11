@@ -2,12 +2,12 @@
   "name": "avisos_economicos",
   "version": "1.0.0",
   "description": "sitio web de avisos economicos finca diez",
-  "main": "src/js/index.js",
-  "source": "src/index.html",
+  "main": "./dist/js/index.js",
+  "source": "src/js/index.js",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build index.js -d dist/output",
+    "build": "parcel build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

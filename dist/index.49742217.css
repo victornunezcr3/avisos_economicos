@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    background-image: linear-gradient(to right, #6d7379 0%, #c0c8c9 100%);
     font-family: 'Staatliches', cursive;
 }
 html {
@@ -68,5 +68,9 @@ form {
 }
 .sitio-web:hover {
     color: white;
+}
+
+#resultado{
+    border-radius: 25%;
 }
 /*# sourceMappingURL=index.49742217.css.map */

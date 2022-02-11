@@ -1,4 +1,4 @@
-const autos = [
+const aviso = [
     {
         tipo: 'venta',
         descripcion: 'Computadora de segunda marca dell con monitor',
@@ -40,7 +40,7 @@ const autos = [
         notas: 'llamar a patricio al 8888-8888'
     },
     {
-        tipo: 'compra',
+        tipo: 'empleo',
         descripcion: 'Peon de albañileria por horas',
         precio: 1200,
         sector: 'empleo',
@@ -86,6 +86,14 @@ const autos = [
         sector: 'alquileres',
         lugar: 'centro',
         notas: 'Negociable, con maria al 88888888'
+    },
+    {
+        tipo: 'empleo',
+        descripcion: 'Jornalero por horas',
+        precio: 1200,
+        sector: 'empleo',
+        lugar: 'tucan',
+        notas: 'Contactar a Serapio 8888-8888, urge'
     }
 ];
 

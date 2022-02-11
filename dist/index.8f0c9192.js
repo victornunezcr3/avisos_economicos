@@ -9,23 +9,23 @@ const datosBusqueda = {
     sector: ''
 };
 document.addEventListener('DOMContentLoaded', ()=>{
-    mostrarAutos(autos);
+    mostrarAvisos(aviso);
 });
 // Event Listeners para el formulario
 tipo.addEventListener('input', (e)=>{
     datosBusqueda.tipo = e.target.value;
-    // Mandar llamar la función de filtrar Autos
-    filtrarAuto();
+    // Mandar llamar la función de filtrar avisos
+    filtrarAviso();
 });
 sector.addEventListener('input', (e)=>{
     datosBusqueda.sector = e.target.value;
-    // Mandar llamar la función de filtrar Autos
-    filtrarAuto();
+    // Mandar llamar la función de filtrar avisos
+    filtrarAviso();
 });
 lugar.addEventListener('input', (e)=>{
     datosBusqueda.lugar = e.target.value;
-    // Mandar llamar la función de filtrar Autos
-    filtrarAuto();
+    // Mandar llamar la función de filtrar avisos
+    filtrarAviso();
 });
 function limpiarHTML() {
     // Leer el elemento Resultado
@@ -33,19 +33,19 @@ function limpiarHTML() {
     // limpiar los resultados anteriores
     while(contenedor.firstChild)contenedor.removeChild(contenedor.firstChild);
 }
-function mostrarAutos(autos) {
+function mostrarAvisos(avisos) {
     limpiarHTML();
     // Leer el elemento Resultado
     const contenedor = document.querySelector('#resultado');
-    // Construir el HTML de los autos
-    autos.forEach((auto)=>{
-        const autoHTML = document.createElement('p');
-        //autoHTML.className ='card body';
-        //autoHTML.classList.add('alert alert-success');
-        autoHTML.innerHTML = `
-            <p>${auto.tipo} - ${auto.sector} - ${auto.descripcion} - Precio: ${auto.precio} - Direccion: ${auto.lugar} - Contacto: ${auto.notas}</p><br/>
+    // Construir el HTML de los avisos
+    avisos.forEach((aviso)=>{
+        const avisoHTML = document.createElement('div');
+        avisoHTML.className = 'bg-liqht card body m-4 ';
+        //avisoHTML.classList.add('alert alert-success');
+        avisoHTML.innerHTML = `
+            <p>${aviso.tipo} - ${aviso.sector} - ${aviso.descripcion} - Precio: ${aviso.precio} - Direccion: ${aviso.lugar} - Contacto: ${aviso.notas}<p/>
         `;
-        contenedor.appendChild(autoHTML);
+        contenedor.appendChild(avisoHTML);
     });
 }
 function noResultado() {
@@ -55,24 +55,24 @@ function noResultado() {
     noResultado1.appendChild(document.createTextNode('No hay Resultados'));
     document.querySelector('#resultado').appendChild(noResultado1);
 }
-function filtrarAuto() {
-    const resultado = autos.filter(filtrarMarca).filter(filtrarPuertas).filter(filtrarTransmision);
+function filtrarAviso() {
+    const resultado = aviso.filter(filtrarTipo).filter(filtrarSector).filter(filtrarLugar);
     //    console.log(resultado);
-    if (resultado.length) mostrarAutos(resultado);
+    if (resultado.length) mostrarAvisos(resultado);
     else noResultado();
 }
 // Aplica los filtros
-function filtrarMarca(auto) {
-    if (datosBusqueda.tipo) return auto.tipo === datosBusqueda.tipo;
-    return auto;
+function filtrarTipo(aviso) {
+    if (datosBusqueda.tipo) return aviso.tipo === datosBusqueda.tipo;
+    return aviso;
 }
-function filtrarPuertas(auto) {
-    if (datosBusqueda.sector) return auto.sector === datosBusqueda.sector;
-    return auto;
+function filtrarSector(aviso) {
+    if (datosBusqueda.sector) return aviso.sector === datosBusqueda.sector;
+    return aviso;
 }
-function filtrarTransmision(auto) {
-    if (datosBusqueda.lugar) return auto.lugar === datosBusqueda.lugar;
-    return auto;
+function filtrarLugar(aviso) {
+    if (datosBusqueda.lugar) return aviso.lugar === datosBusqueda.lugar;
+    return aviso;
 }
 
 //# sourceMappingURL=index.8f0c9192.js.map

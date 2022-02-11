@@ -1,6 +1,6 @@
 {
   "name": "avisos_economicos",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "sitio web de avisos economicos finca diez",  
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",

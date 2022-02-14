@@ -40,10 +40,15 @@ function mostrarAvisos(avisos) {
     // Construir el HTML de los avisos
     avisos.forEach((aviso)=>{
         const avisoHTML = document.createElement('div');
-        avisoHTML.className = 'bg-liqht card body m-4 ';
+        avisoHTML.className = 'bg-liqht card body m-4 text-wrap';
         //avisoHTML.classList.add('alert alert-success');
         avisoHTML.innerHTML = `
-            <p>${aviso.tipo} - ${aviso.sector} - ${aviso.descripcion} - Precio: ${aviso.precio} - Direccion: ${aviso.lugar} - Contacto: ${aviso.notas}<p/>
+            <p>${aviso.tipo}  
+            - ${aviso.descripcion} 
+            - Precio: ${aviso.precio} 
+            - Direccion: ${aviso.lugar} 
+            - Contacto: ${aviso.notas}
+            <p/>
         `;
         contenedor.appendChild(avisoHTML);
     });

@@ -33,6 +33,6 @@ const aviso = [
 		precio: 0,
 		sector: 'servicio',
 		lugar: 'centro',
-		notas: 'Centro de Finca diez, Con Noelia Mantilla al 6110-1115'
+		notas: 'Centro de Finca diez, Con Noelia Mantilla al 71510753'
     }		
 ];

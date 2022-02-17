@@ -9,7 +9,7 @@ const datosBusqueda = {
     tipo : '',
     lugar: '',
     sector:''
-}
+};
 
 document.addEventListener('DOMContentLoaded', () => {
     mostrarAvisos(aviso);
@@ -43,7 +43,7 @@ function limpiarHTML() {
     while(contenedor.firstChild) {
         contenedor.removeChild(contenedor.firstChild);
     }
-}
+};
 
 function mostrarAvisos(avisos){
     limpiarHTML();
@@ -67,7 +67,7 @@ function mostrarAvisos(avisos){
         contenedor.appendChild(avisoHTML);
 
     })
-}
+};
 function noResultado() {
     limpiarHTML();
 
@@ -75,7 +75,7 @@ function noResultado() {
     noResultado.classList.add('alerta', 'error');
     noResultado.appendChild(document.createTextNode('No hay Resultados'));
     document.querySelector('#resultado').appendChild(noResultado);
-}
+};
 
 function filtrarAviso() {
    const resultado = aviso.filter(filtrarTipo).filter(filtrarSector).filter(filtrarLugar);
@@ -86,7 +86,7 @@ function filtrarAviso() {
    } else {
        noResultado();
    }
-}
+};
 
 
 // Aplica los filtros
@@ -102,11 +102,11 @@ function filtrarSector(aviso) {
         return aviso.sector === datosBusqueda.sector;
     }
     return aviso;
-}
+};
 
 function filtrarLugar(aviso) {
     if(datosBusqueda.lugar){
         return aviso.lugar === datosBusqueda.lugar;
     } 
     return aviso;
-}
+};

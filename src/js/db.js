@@ -34,5 +34,14 @@ const aviso = [
 		sector: 'servicio',
 		lugar: 'centro',
 		notas: 'Centro de Finca diez, Con Noelia Mantilla al 71510753'
+    },
+	{
+		consec:'aefd-5', 
+        tipo: 'compra', 
+		descripcion: 'Bicicleta montañera',
+		precio: 75000,
+		sector: 'Bicicletas',
+		lugar: 'Sector Oasis',
+		notas: 'Contactar a administrador al celular: 8888 8888'
     }		
 ];

@@ -40,8 +40,8 @@ const aviso = [
         tipo: 'compra', 
 		descripcion: 'Bicicleta montañera',
 		precio: 75000,
-		sector: 'Bicicletas',
-		lugar: 'Sector Oasis',
+		sector: 'bicicletas',
+		lugar: 'oasis',
 		notas: 'Contactar a administrador al celular: 8888 8888'
     }		
 ];
